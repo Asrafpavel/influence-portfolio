@@ -79,7 +79,7 @@ banner styles
 .fa-arrow-right{
     margin-left: 10px;
 }
-.bg{
+/* .bg{
     height: 350px;
     width: 350px;
     background-color: #f7f0ffff;
@@ -109,6 +109,14 @@ banner styles
     left: 20px;
     
     
+} */
+
+.background{
+    background-image: url(../images/Circle\ design.svg);
+}
+.background img{
+    width: 440px;
+    height: 414px;
 }
 
 /* ------------------------------ */
@@ -237,4 +245,46 @@ footer{
     height: 20px;
     margin-right: 20px;
     
+}
+
+
+@media only screen and (max-width:600px) {
+   nav{
+    flex-direction: column;
+    padding: 50px ;
+    gap: 30px;
+    
+   } 
+   
+   nav > ul{
+    flex-direction: column;
+    gap: 20px;
+    
+   }
+   .banner{
+    flex-direction: column;
+    padding: 0;
+    gap: 30px;
+   }
+   .banner-intro{
+    text-align: center;
+    width: 90%;
+   }
+  .featured{
+    padding: 10px;
+
+  }
+   .featured-items{
+    flex-direction: column-reverse;
+   }
+   .featured-items img{
+    width: 100%;
+   }
+   .featured-intro{
+    width: 90%;
+    text-align: center;
+   }
+   .right{
+    
+   }
 }
